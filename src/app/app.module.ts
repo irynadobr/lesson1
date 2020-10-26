@@ -9,7 +9,6 @@ import { UserComponent } from './component/user/user.component';
 import { AllPostsComponent } from './component/all-posts/all-posts.component';
 import { AllCommentsComponent } from './component/all-comments/all-comments.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
