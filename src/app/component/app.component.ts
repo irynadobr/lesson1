@@ -10,7 +10,6 @@ import {UserService} from '../services/user.service';
 })
 export class AppComponent {
   title = `lesson1`;
-
   constructor() {
   }
 }
