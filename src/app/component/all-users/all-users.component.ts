@@ -17,7 +17,6 @@ export class AllUsersComponent implements OnInit {
   this.users = value);
 
 }
-
   ngOnInit(): void {
   }
 
