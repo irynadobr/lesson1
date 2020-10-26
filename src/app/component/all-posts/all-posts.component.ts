@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Post} from '../../models/Post';
 import {PostService} from '../../services/post.service';
-
 @Component({
   selector: 'app-all-posts',
   templateUrl: './all-posts.component.html',
@@ -10,7 +9,6 @@ import {PostService} from '../../services/post.service';
 export class AllPostsComponent implements OnInit {
   allPosts: Post [];
   constructor(private postService: PostService) {
-
     this.postService.AllPosts().subscribe(value =>
       this.allPosts = value);
   }
