@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './component/app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AllUsersComponent } from './component/all-users/all-users.component';
