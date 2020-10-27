@@ -6,14 +6,14 @@ import { AllUsersComponent } from './component/all-users/all-users.component';
 import {RouterModule} from '@angular/router';
 import { AllPostsComponent } from './component/all-posts/all-posts.component';
 import { AllCommentsComponent } from './component/all-comments/all-comments.component';
-import { UserPostIdComponent } from './component/user-post-id/user-post-id.component';
+import { AllPostsUserIdComponent } from './component/all-posts-user-id/all-posts-user-id.component';
 @NgModule({
   declarations: [
     AppComponent,
     AllUsersComponent,
     AllPostsComponent,
     AllCommentsComponent,
-    UserPostIdComponent,
+      AllPostsUserIdComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,7 @@ import { UserPostIdComponent } from './component/user-post-id/user-post-id.compo
       {path: 'posts', component: AllPostsComponent},
       {path: 'comments', component: AllCommentsComponent},
       {path: 'users', component: AllUsersComponent, children: [
-        {path: 'posts/:id', component: UserPostIdComponent},
+        {path: 'posts/:id', component: AllPostsUserIdComponent},
 
         ]
       },
