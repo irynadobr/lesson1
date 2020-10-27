@@ -1,7 +1,8 @@
-<p> {{postUser?.id}}</p>
-<p> {{postUser?.userId}}</p>
-<p> {{postUser?.title}}</p>
-<p> {{postUser?.body}}</p>
+<div *ngFor="let post  of postUser">
 
-
-
+  {{post.userId}}<br>
+  {{post.id}} <br>
+  {{post.title}}<br>
+  {{post.body}}<br>
+  <hr>
+</div>

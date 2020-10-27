@@ -7,7 +7,6 @@ import {RouterModule} from '@angular/router';
 import { AllPostsComponent } from './component/all-posts/all-posts.component';
 import { AllCommentsComponent } from './component/all-comments/all-comments.component';
 import { UserPostIdComponent } from './component/user-post-id/user-post-id.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,8 +25,6 @@ import { UserPostIdComponent } from './component/user-post-id/user-post-id.compo
         {path: 'posts/:id', component: UserPostIdComponent},
 
         ]
-
-
       },
 
       ])
