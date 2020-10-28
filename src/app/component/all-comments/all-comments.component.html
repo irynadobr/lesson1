@@ -1,10 +1,7 @@
 <div *ngFor="let comment of comments">
-  {{comment.postId}}<br>
-  {{comment.id}}<br>
-  {{comment.name}} <br>
-  {{comment.email}}<br>
-  {{comment.body}}<br>
-  <hr>
+  <app-comment [comment]="comment"></app-comment>
+<hr>
+
 
 </div>
 

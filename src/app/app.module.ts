@@ -7,6 +7,9 @@ import {RouterModule} from '@angular/router';
 import { AllPostsComponent } from './component/all-posts/all-posts.component';
 import { AllCommentsComponent } from './component/all-comments/all-comments.component';
 import { AllPostsUserIdComponent } from './component/all-posts-user-id/all-posts-user-id.component';
+import { UserComponent } from './component/user/user.component';
+import { PostComponent } from './component/post/post.component';
+import { CommentComponent } from './component/comment/comment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +17,9 @@ import { AllPostsUserIdComponent } from './component/all-posts-user-id/all-posts
     AllPostsComponent,
     AllCommentsComponent,
       AllPostsUserIdComponent,
+      UserComponent,
+      PostComponent,
+      CommentComponent,
   ],
   imports: [
     BrowserModule,

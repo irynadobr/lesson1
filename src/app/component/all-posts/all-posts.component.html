@@ -1,9 +1,6 @@
-<div *ngFor="let post  of allPosts">
-  {{post.userId}}<br>
-  {{post.id}} <br>
-  {{post.title}}<br>
-  {{post.body}}<br>
-
+<div *ngFor="let post of allPosts">
+ <app-post [post]="post"></app-post>
+  <hr>
 </div>
 <router-outlet> </router-outlet>
 

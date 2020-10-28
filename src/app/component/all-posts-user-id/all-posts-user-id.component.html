@@ -1,8 +1,5 @@
 <div *ngFor="let post  of postUser">
-  {{post.userId}}<br>
-  {{post.id}} <br>
-  {{post.title}}<br>
-  {{post.body}}<br>
+  <app-post [post]="post"></app-post>
   <hr>
 </div>
 
