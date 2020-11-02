@@ -1,6 +1,7 @@
 <div *ngFor="let post  of postUser">
   <app-post [post]="post"></app-post>
+  <button [routerLink]="['comments', post.id]">comments post of user</button>
   <hr>
 </div>
 
-
+<router-outlet> </router-outlet>

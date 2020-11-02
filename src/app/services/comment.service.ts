@@ -15,4 +15,8 @@ export class CommentService {
   AllComments(): Observable<Comment[]> {
     return this.httpClient.get<Comment[]>('https://jsonplaceholder.typicode.com/comments');
   }
+  AllCommentsUsers(id): Observable<Comment[]> {
+    return this.httpClient.get<Comment[]>(`https://jsonplaceholder.typicode.com/comments?postId=${id}`);
+
+  }
 }

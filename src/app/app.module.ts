@@ -10,6 +10,7 @@ import { AllPostsUserIdComponent } from './component/all-posts-user-id/all-posts
 import { UserComponent } from './component/user/user.component';
 import { PostComponent } from './component/post/post.component';
 import { CommentComponent } from './component/comment/comment.component';
+import { AllCommentsPostUserIdComponent } from './all-comments-post-user-id/all-comments-post-user-id.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { CommentComponent } from './component/comment/comment.component';
       UserComponent,
       PostComponent,
       CommentComponent,
+      AllCommentsPostUserIdComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,10 @@ import { CommentComponent } from './component/comment/comment.component';
       {path: 'posts', component: AllPostsComponent},
       {path: 'comments', component: AllCommentsComponent},
       {path: 'users', component: AllUsersComponent, children: [
-        {path: 'posts/:id', component: AllPostsUserIdComponent},
+        {path: 'posts/:id', component: AllPostsUserIdComponent, children: [
+            {path: 'comments/:id', component: AllCommentsPostUserIdComponent}
+          ]
+        },
 
         ]
       },
