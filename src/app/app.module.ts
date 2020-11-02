@@ -10,7 +10,7 @@ import { AllPostsUserIdComponent } from './component/all-posts-user-id/all-posts
 import { UserComponent } from './component/user/user.component';
 import { PostComponent } from './component/post/post.component';
 import { CommentComponent } from './component/comment/comment.component';
-import { AllCommentsPostUserIdComponent } from './all-comments-post-user-id/all-comments-post-user-id.component';
+import { AllCommentsPostUserIdComponent } from './component/all-comments-post-user-id/all-comments-post-user-id.component';
 @NgModule({
   declarations: [
     AppComponent,
